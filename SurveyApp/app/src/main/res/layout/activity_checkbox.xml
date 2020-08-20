@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary1"
+    android:padding="16dp"
+    tools:context="com.urahamat01.surveyapp.DropdownActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:text="Part: 1"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:id="@+id/text_view_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_score"
+        android:freezesText="true"
+        android:text="About Programming Experiences"
+        android:textColor="@android:color/black" />
+
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:freezesText="true"
+        android:text="00:30"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textSize="25dp"
+        android:text="Do you like our product ?"
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/viewStub"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"  />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+
+        android:padding="2dp"
+        android:id="@+id/viewStub" />
+
+    <View
+        android:id="@+id/viewStub1"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+
+        android:padding="2dp" />
+
+    <View
+        android:id="@+id/viewStub2"
+        android:layout_width="100dp"
+        android:layout_height="5dp"
+        android:layout_alignStart="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_marginStart="142dp"
+        android:layout_marginLeft="142dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="50dp"
+        />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:id="@+id/checkBox3"
+        android:button="@drawable/customcheckbox"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:id="@+id/checkBox4"
+        android:button="@drawable/customcheckbox"
+        android:layout_below="@+id/checkBox3"
+        android:layout_alignLeft="@+id/checkBox3"
+        android:layout_alignStart="@+id/checkBox3" />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/button_confirm_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox4"
+        android:layout_marginTop="50dp"
+        android:freezesText="true"
+        android:text="Confirm" />
+
+
+</RelativeLayout>
